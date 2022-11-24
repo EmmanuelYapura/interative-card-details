@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+    background-image: url('./images/bg-main-mobile.png');
+}
+
+label {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+input {
+    height: 20px;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 10px;
+    padding: 0.5em;
+}
+
+input:hover{
+    cursor: pointer;
+}
+
+input:target{
+    border: 1px solid hsl(278, 94%, 30%);
+}
+
+/* Completed state */
+
+.error{
+    border: 2px solid hsl(0, 100%, 66%);
+}
+
+/* images cards */
+.container-cards {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.card-back {
+    width: 240px;
+    height: 170px;
+    background-image: url('./images/bg-card-back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: relative;
+    left: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3em;
+    color: hsl(0, 0%, 100%);
+}
+
+.text-back {
+    font-size: 12px;
+    margin: -20px;
+}
+
+
+.card-front {
+    width: 270px;
+    height: 170px;
+    background-image: url('./images/bg-card-front.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    bottom: -96px;
+    left: -50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 1em;
+}
+
+.logo-card {
+    margin-top: 20px;
+}
+
+.number-card {
+    letter-spacing: 2px;
+    font-size: 18px;
+    padding-top: 40px;
+}
+
+.user-card {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card-date {
+    margin-left: 6em;
+}
+
+/* Completed State */
+.completed-state{
+    height: 29em;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-complete-state{
+    margin-bottom: 1em;
+}
+
+.title-complete-state{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.text-complete-state{
+    font-size: 1em;
+    font-weight: 500;
+    color: hsl(279, 6%, 55%);
+    margin-bottom: 2em;
+}
+
+/* Form */
+.container-form {
+    background-color: hsl(0, 0%, 100%);
+    height: 29em;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 7em 2em 0;
+}
+
+.input-card {
+    margin: 0.8em 0;
+}
+
+.from-group-2 {
+    display: flex;
+    margin: 0.5em 2em;
+}
+
+.form-group-date {
+    width: 160px;
+    margin-right: 1em;
+}
+
+.form-group-cvc {
+    width: 120px;
+    margin-bottom: 1em;
+}
+
+.input-date {
+    width: 50px;
+    margin: 0.5em 0.2em;
+}
+
+.input-cvc {
+    width: 120px;
+    margin: 0.5em 0;
+}
+
+.btn-submit {
+    height: 50px;
+    width: 320px;
+    margin: 0 2em;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+}
+
+@media(min-width: 376px) {
+    label {
+        font-size: 16px;
+    }
+
+    body {
+        display: flex;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container-cards {
+        width: 25%;
+        margin-top: 10em;
+        margin-left: 12em;
+        justify-content: start;
+    }
+
+    input {
+        height: 28px;
+        border-radius: 10px;
+        padding: 0.5em;
+    }
+    
+
+    /* cards */
+
+    .card-back {
+        width: 300px;
+        height: 210px;
+        position: relative;
+        top: 330px;
+        left: 150px;
+    }
+
+    .text-back {
+        font-size: 14px;
+        margin: -15px;
+    }
+
+    .card-front {
+        width: 330px;
+        height: 210px;
+        bottom: 250px;
+        left: -55px;
+    }
+
+
+    .user-card {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    /* form */
+
+    .container-form {
+        background-color: hsl(0, 0%, 100%);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin: 0em 2em;
+    }
+
+    .input-card {
+        margin-top: 0.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .from-group-2 {
+        display: flex;
+        margin: 0em 2em;
+    }
+
+    .form-group-date {
+        width: 170px;
+        margin-right: 1em;
+    }
+
+    .input-date {
+        width: 60px;
+    }
+
+    .btn-submit {
+        margin: 0 2.5em;
+        border-radius: 7px;
+    }
+}
